@@ -71,11 +71,9 @@ h1 {
 }
 
 
-@media screen and (max-width: 481px)  {
-    
-}
+@media screen and (min-width: 481px) and (max-width: 1000px) {
+    body {
+        background-color: blue;
 
-
-@media  screen and (max-width: 1000px) {
-    
+    }
 }
