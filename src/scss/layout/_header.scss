@@ -1,5 +1,29 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.header {
+    background-color: $background-header;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 0;
+
+    &__main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;   
+
+        &--logo {
+            width: 20%;
+    }
+    
+    &--hamburger {
+        height: 20px;
+    }
+
+    }
 }
+
+
+    
