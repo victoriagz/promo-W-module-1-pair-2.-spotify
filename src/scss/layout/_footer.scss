@@ -4,4 +4,29 @@ footer {
     color: white;
     display: flex;
     justify-content: space-between;
+
+}
+
+.box-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    font-size: 10px;
+
+}
+
+.box-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px){
+    .box-1{
+        display: flex;   
+        flex-direction: row;
+    }
+
 }

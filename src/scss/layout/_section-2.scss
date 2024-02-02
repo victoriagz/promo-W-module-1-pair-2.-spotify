@@ -1,0 +1,20 @@
+.section-2 {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px){
+
+    .title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+
+    }
+.section-2{ 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+      
+}
