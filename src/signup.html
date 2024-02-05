@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro Spotify</title>
+    <link rel="stylesheet" href="./scss/page/_signup.scss"/>
+</head>
+<body>
+    
+
+<form action="https://dev.adalab.es/api/form">
+    <fieldset class="data-personal">
+        <legend>Registrate con tu correo electrónico</legend>
+    <label for="email">¿Cuál es tu correo electrónico?</label>
+    <input type="email" name="email" id="email" placeholder="Pon tu correo electrónico."/>
+    <label for="confirm-email">Confirma tu correo electrónico</label>
+    <input type="email" name="confirm-email" id="confirm-email" placeholder="Vuelve a poner tu correo electrónico."/>
+    <label for="password">Crea una contraseña.</label>
+    <input type="password" name="password" id="password" placeholder="Crea una contraseña."/>
+    <label for="name">¿Cómo quieres que te llamemos?</label>
+    <input type="text" name="name" id="name" placeholder="Pon un nombre de perfil."/>
+    <p>Esto aparece en tu perfil.</p>
+    </fieldset>
+    <fieldset class="data-personal-2">
+    <label for="birth-date">¿Cuál es tu fecha de nacimiento?</label>
+    <label for="birth-day">Día</label>
+     <input type="number" min="1" max="31" placeholder="DD"/>
+     <label for="birth-month">Mes</label>
+     <select id="birth-month" name="birth-month">
+        <option value="">Mes</option>
+        <option value="01">Enero</option>
+        <option value="02">Febrero</option>
+        <option value="03">Marzo</option>
+        <option value="04">Abril</option>
+        <option value="05">Mayo</option>
+        <option value="06">Junio</option>
+        <option value="07">Julio</option>
+        <option value="08">Agosto</option>
+        <option value="09">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+     </select> 
+     <label for="birth-year">Año</label>
+     <input type="number" name="birth-year" id="birth-year" min="1924" max="2024" placeholder="AAAA"/>
+     <br>
+    
+     <label for="gender">¿Cuál es tu género?</label>
+     
+     <input type="radio" name="gender" id="gender-man" value="gender-man"/>
+     <label for="gender-man">Hombre</label>
+     <input type="radio" name="gender" id="gender-woman" value="gender-woman"/>
+     <label for="gender-woman">Mujer</label>
+     <input type="radio" name="gender" id="gender-non-binary" value="gender-non-binary"/>
+     <label for="gender-non-binary">No binario</label>
+<br>
+    
+     <input type="checkbox" name="offer-spotify" id="offer-spotify" value="offer-spotify"/>
+     <label for="offer-spotify">Quiero que me enviéis novedades y ofertas de Spotify</label>
+   
+     <input type="checkbox" name="data" id="data" value="data"/>
+     <label for="data">Compartir mis datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.</label>
+
+</fieldset>
+
+<button type="submit">Registrate</button>
+</form>
+<p>¿Ya tienes cuenta? <a href="">Inicia sesión.</a></p>
+
+</body>
+</html>
